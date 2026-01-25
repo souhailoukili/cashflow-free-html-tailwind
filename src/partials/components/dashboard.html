@@ -1,0 +1,239 @@
+<div
+  class="relative isolate z-10"
+  data-animate="fade-up blur"
+  data-duration="0.8"
+  data-delay="0.4"
+  data-blur="20"
+>
+  {{!-- Dashboard Mock --}}
+  <div id="dashboard-container" data-dashboard-container class="rounded-2xl bg-neutral-950/60 border border-white/10 overflow-hidden relative" style="mask-image: linear-gradient(to bottom, black 70%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);">
+    {{!-- Animated Border SVG --}}
+    <svg class="absolute inset-0 w-full h-full pointer-events-none z-10 rounded-[inherit]">
+      <defs>
+        <linearGradient id="dashboardBorderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:var(--color-primary);stop-opacity:0" />
+          <stop offset="50%" style="stop-color:var(--color-primary);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:var(--color-primary);stop-opacity:0" />
+        </linearGradient>
+        <filter id="dashboardBorderBlur">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" />
+        </filter>
+      </defs>
+      <path id="border-left" data-border-left class="border-path" fill="none" stroke="url(#dashboardBorderGradient)" stroke-width="3" stroke-linecap="round" opacity="0" filter="url(#dashboardBorderBlur)"/>
+      <path id="border-right" data-border-right class="border-path" fill="none" stroke="url(#dashboardBorderGradient)" stroke-width="3" stroke-linecap="round" opacity="0" filter="url(#dashboardBorderBlur)"/>
+    </svg>
+
+    {{!-- Dashboard Header Bar --}}
+    <div class="flex items-center justify-between px-5 py-3 border-b border-white/10">
+      <div class="flex items-center gap-6">
+        {{!-- Logo --}}
+        <div class="w-7 h-7 text-primary">
+          {{> base/logo }}
+        </div>
+        {{!-- Breadcrumb --}}
+        <div class="hidden md:flex items-center gap-2 text-sm text-white/60">
+          <img src="/images/avatars/avatar-3.webp" alt="User" class="w-6 h-6 rounded-full object-cover" loading="lazy" />
+          <span>Personal</span>
+          <span class="text-white/30">/</span>
+          <span class="text-white flex items-center gap-1">
+            Dashboard Overview
+            <span class="w-4 h-4">{{> base/icons/arrow-down-s-line }}</span>
+          </span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="hidden md:block text-sm text-white/60">Build</span>
+        <span class="hidden md:block text-sm text-white/60">Settings</span>
+        <span class="hidden md:block text-sm text-white/60">Help</span>
+        <span class="hidden md:block text-sm text-white/60">Share</span>
+      </div>
+    </div>
+
+    {{!-- Dashboard Content --}}
+    <div class="p-5 md:p-6">
+      {{!-- Title Row --}}
+      <div class="flex items-center justify-between mb-6">
+        <h3 class="text-white text-lg md:text-xl font-semibold m-0">Smart Savings Dashboard</h3>
+        <div class="flex items-center gap-3">
+          <span class="hidden md:flex items-center gap-1.5 text-sm text-white/60">
+            <span class="w-4 h-4">{{> base/icons/time-line }}</span>
+            7 days ago
+          </span>
+          <button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 ring-1 ring-white/10 text-sm text-white hover:bg-white/10 transition-colors">
+            <span class="w-4 h-4">{{> base/icons/edit-line }}</span>
+            Edit
+          </button>
+        </div>
+      </div>
+
+      {{!-- Stats Grid --}}
+      <div class="grid lg:grid-cols-3 gap-4 md:gap-5">
+
+        {{!-- Total Savings Card --}}
+        <div class="rounded-xl p-5 pb-1.5 lg:pb-5">
+          <div class="flex items-start justify-between mb-4">
+            <span class="text-sm text-white/60">Total Savings</span>
+          </div>
+          <div class="flex items-end gap-4 mb-4">
+            <span class="text-4xl font-bold text-white">$12,847</span>
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-medium mb-1.5">+18.3%</span>
+          </div>
+          <div class="text-xs text-white/40 mb-1 lg:mb-4">Last 30 days</div>
+          {{!-- Mini Line Chart --}}
+          <div class="hidden lg:block h-16">
+            <svg viewBox="0 0 200 50" class="w-full h-full" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="savingsGradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#10b981" stop-opacity="0.4"/>
+                  <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M0,45 L20,42 L40,38 L60,40 L80,32 L100,28 L120,25 L140,20 L160,15 L180,12 L200,5 L200,50 L0,50 Z" fill="url(#savingsGradient)"/>
+              <path d="M0,45 L20,42 L40,38 L60,40 L80,32 L100,28 L120,25 L140,20 L160,15 L180,12 L200,5" fill="none" stroke="#10b981" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+
+        {{!-- Monthly Activity Card --}}
+        <div class="rounded-xl p-5">
+          <div class="flex items-start justify-between mb-4">
+            <span class="text-sm text-white/60">Monthly Activity</span>
+          </div>
+          {{!-- SVG Thin Bar Chart --}}
+          <svg viewBox="0 0 240 150" class="w-full h-52">
+            {{!-- Y-axis labels --}}
+            <text x="8" y="15" fill="rgba(255,255,255,0.3)" font-size="8">2.5K</text>
+            <text x="8" y="40" fill="rgba(255,255,255,0.3)" font-size="8">2K</text>
+            <text x="8" y="65" fill="rgba(255,255,255,0.3)" font-size="8">1.5K</text>
+            <text x="8" y="90" fill="rgba(255,255,255,0.3)" font-size="8">1K</text>
+            <text x="8" y="115" fill="rgba(255,255,255,0.3)" font-size="8">0.5K</text>
+            <text x="8" y="135" fill="rgba(255,255,255,0.3)" font-size="8">0K</text>
+            {{!-- Thin bars - orange/yellow like the reference --}}
+            <rect x="32" y="95" width="2" height="40" fill="#f97316" opacity="0.65"/>
+            <rect x="40" y="85" width="2" height="50" fill="#facc15" opacity="0.65"/>
+            <rect x="48" y="100" width="2" height="35" fill="#f97316" opacity="0.65"/>
+            <rect x="56" y="90" width="2" height="45" fill="#facc15" opacity="0.65"/>
+            <rect x="64" y="75" width="2" height="60" fill="#f97316" opacity="0.65"/>
+            <rect x="72" y="65" width="2" height="70" fill="#facc15" opacity="0.65"/>
+            <rect x="80" y="80" width="2" height="55" fill="#f97316" opacity="0.65"/>
+            <rect x="88" y="70" width="2" height="65" fill="#facc15" opacity="0.65"/>
+            <rect x="96" y="55" width="2" height="80" fill="#f97316" opacity="0.65"/>
+            <rect x="104" y="45" width="2" height="90" fill="#facc15" opacity="0.65"/>
+            <rect x="112" y="60" width="2" height="75" fill="#f97316" opacity="0.65"/>
+            <rect x="120" y="50" width="2" height="85" fill="#facc15" opacity="0.65"/>
+            <rect x="128" y="70" width="2" height="65" fill="#f97316" opacity="0.65"/>
+            <rect x="136" y="80" width="2" height="55" fill="#facc15" opacity="0.65"/>
+            <rect x="144" y="65" width="2" height="70" fill="#f97316" opacity="0.65"/>
+            <rect x="152" y="55" width="2" height="80" fill="#facc15" opacity="0.65"/>
+            <rect x="160" y="75" width="2" height="60" fill="#f97316" opacity="0.65"/>
+            <rect x="168" y="85" width="2" height="50" fill="#facc15" opacity="0.65"/>
+            <rect x="176" y="90" width="2" height="45" fill="#f97316" opacity="0.65"/>
+            <rect x="184" y="70" width="2" height="65" fill="#facc15" opacity="0.65"/>
+            <rect x="192" y="60" width="2" height="75" fill="#f97316" opacity="0.65"/>
+            <rect x="200" y="50" width="2" height="85" fill="#facc15" opacity="0.65"/>
+            <rect x="208" y="65" width="2" height="70" fill="#f97316" opacity="0.65"/>
+            <rect x="216" y="75" width="2" height="60" fill="#facc15" opacity="0.65"/>
+            <rect x="224" y="85" width="2" height="50" fill="#f97316" opacity="0.65"/>
+            <rect x="232" y="95" width="2" height="40" fill="#facc15" opacity="0.65"/>
+            {{!-- X-axis labels --}}
+            <text x="55" y="148" fill="rgba(255,255,255,0.3)" font-size="8">Jan 3</text>
+            <text x="105" y="148" fill="rgba(255,255,255,0.3)" font-size="8">Jan 4</text>
+            <text x="155" y="148" fill="rgba(255,255,255,0.3)" font-size="8">Jan 5</text>
+            <text x="205" y="148" fill="rgba(255,255,255,0.3)" font-size="8">Jan 6</text>
+          </svg>
+        </div>
+
+        {{!-- Spending Trends Card --}}
+        <div class="hidden lg:block rounded-xl p-5">
+          <div class="flex items-start justify-between mb-6">
+            <span class="text-sm text-white/60">Spending Trends</span>
+          </div>
+          {{!-- Multi-line Chart --}}
+          <div class="h-48 relative">
+            {{!-- Y-axis labels --}}
+            <div class="absolute left-0 top-0 bottom-8 flex flex-col justify-between text-[10px] text-white/30">
+              <span>$5k</span>
+              <span>$4k</span>
+              <span>$3k</span>
+              <span>$2k</span>
+              <span>$1k</span>
+              <span>$0</span>
+            </div>
+            {{!-- Chart area --}}
+            <div class="ml-8 h-full">
+              <svg viewBox="0 0 200 120" class="w-full h-40" preserveAspectRatio="none">
+                {{!-- Income line (purple/pink) --}}
+                <path d="M0,40 L30,35 L60,42 L90,30 L120,25 L150,28 L180,20 L200,15" fill="none" stroke="#c084fc" stroke-width="2" opacity="0.65"/>
+                {{!-- Expenses line (blue) --}}
+                <path d="M0,60 L30,65 L60,55 L90,70 L120,62 L150,58 L180,65 L200,55" fill="none" stroke="#60a5fa" stroke-width="2" opacity="0.65"/>
+                {{!-- Savings line (pink/red) --}}
+                <path d="M0,85 L30,80 L60,88 L90,75 L120,70 L150,72 L180,65 L200,60" fill="none" stroke="#fb7185" stroke-width="2" opacity="0.65"/>
+              </svg>
+              {{!-- X-axis labels --}}
+              <div class="flex justify-between text-[10px] text-white/30 mt-2">
+                <span>Jan</span>
+                <span>Feb</span>
+                <span>Mar</span>
+                <span>Apr</span>
+              </div>
+            </div>
+          </div>
+          {{!-- Legend --}}
+          <div class="flex items-center gap-4 mt-4">
+            <div class="flex items-center gap-1.5">
+              <div class="w-2 h-2 rounded-full bg-purple-400"></div>
+              <span class="text-[10px] text-white/40">Income</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <div class="w-2 h-2 rounded-full bg-blue-400"></div>
+              <span class="text-[10px] text-white/40">Expenses</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <div class="w-2 h-2 rounded-full bg-pink-400"></div>
+              <span class="text-[10px] text-white/40">Savings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{!-- Activity Log Panel --}}
+      <div class="rounded-xl p-5 pt-2.5">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-4">
+          <div>
+            <div class="flex items-center gap-3 mb-1">
+              <span class="text-white font-medium">Active - Smart Savings Mode</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-medium">Running</span>
+            </div>
+            <span class="text-xs text-white/40">Last sync: Jan 5, 2026 - 09:42:18</span>
+          </div>
+          <div class="hidden lg:flex items-center gap-2">
+            <button class="px-3 py-1.5 rounded-lg bg-white/5 ring-1 ring-white/10 text-xs text-white/60 hover:text-white transition-colors">Transactions</button>
+            <button class="px-3 py-1.5 rounded-lg bg-white/10 ring-1 ring-white/10 text-xs text-white">Insights</button>
+            <button class="px-3 py-1.5 rounded-lg bg-white/5 ring-1 ring-white/10 text-xs text-white/60 hover:text-white transition-colors">Alerts</button>
+            <div class="ml-2 relative">
+              <input type="text" placeholder="Filter logs..." class="px-3 py-1.5 rounded-lg bg-white/5 ring-1 ring-white/10 text-xs text-white/60 placeholder-white/30 w-32 focus:outline-none focus:ring-primary/50">
+            </div>
+          </div>
+        </div>
+        {{!-- Log entries --}}
+        <div class="space-y-0.5 font-mono text-xs">
+          <div class="flex items-start gap-4 py-1.5 border-l-2 border-emerald-500 pl-3">
+            <span class="text-white/40 shrink-0">Jan 5 09:42:18</span>
+            <span class="text-white/30">▶</span>
+            <span class="text-white/70">AI detected recurring subscription: "Netflix" - $15.99/month</span>
+          </div>
+          <div class="flex items-start gap-4 py-1.5 border-l-2 border-emerald-500 pl-3">
+            <span class="text-white/40 shrink-0">Jan 5 09:42:18</span>
+            <span class="text-white/30">▶</span>
+            <span class="text-white/70">Auto-categorized 12 transactions from Chase ***4521</span>
+          </div>
+          <div class="flex items-start gap-4 py-1.5 border-l-2 border-emerald-500 pl-3">
+            <span class="text-white/40 shrink-0">Jan 5 09:42:17</span>
+            <span class="text-white/30">▶</span>
+            <span class="text-white/70">Savings goal "Emergency Fund" reached 85% completion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

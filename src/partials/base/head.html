@@ -1,0 +1,25 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="view-transition" content="same-origin" />
+<meta name="description" content="Cashflow - A free HTML template for finance and budgeting apps. Built with Tailwind CSS v4 and modern design. Available at pixelrocket.store" />
+<meta name="author" content="Pixel Rocket" />
+<link rel="canonical" href="https://pixelrocket.store/" />
+<!-- Preconnect to Google Fonts for faster loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<!-- Favicon and app icons -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<!-- Font loaded from theme.config.js (non-blocking with media swap) -->
+{{#each fontUrls}}
+<link rel="preload" href="{{this}}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link href="{{this}}" rel="stylesheet" /></noscript>
+{{/each}}
+<!-- here is your page title. It is passed in as the title prop when you call the partial -->
+<title>
+  {{#if title}}{{ title }}{{else}}HTML Tailwind V4 Personal Portfolio{{/if}}
+</title>
+<link rel="stylesheet" href='{{resolve-from-root "../styles/main.css"}}' />

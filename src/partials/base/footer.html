@@ -1,0 +1,52 @@
+{{> base/footer-cta }}
+
+<footer class="py-32 relative overflow-hidden">
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="flex flex-col lg:flex-row gap-10 lg:gap-40">
+      <!-- Menu Columns -->
+      <div class="flex-1 grid grid-cols-2 lg:grid-cols-3 gap-10">
+        {{#each @root.footerMenus.columns}}
+        <div class="flex flex-col gap-10">
+          {{#each menus}}
+          {{> base/footer-menu title=title links=links hideOnMobile=hideOnMobile }}
+          {{/each}}
+        </div>
+        {{/each}}
+      </div>
+
+      <!-- Logo & Socials -->
+      <div class="flex flex-col items-center lg:items-end gap-7">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3">
+          <span class="w-6 h-6 text-primary">{{> base/logo }}</span>
+        </a>
+
+        <!-- Social Icons -->
+        <div class="flex items-center gap-5">
+          <a href="#" aria-label="Follow us on X (Twitter)" class="text-white/60 hover:text-white transition-colors duration-300 w-5 h-5">
+            {{> base/icons/twitter-x }}
+          </a>
+          <a href="#" aria-label="Subscribe on YouTube" class="text-white/60 hover:text-white transition-colors duration-300 w-5 h-5">
+            {{> base/icons/youtube-fill }}
+          </a>
+          <a href="#" aria-label="Connect on LinkedIn" class="text-white/60 hover:text-white transition-colors duration-300 w-5 h-5">
+            {{> base/icons/linkedin-fill }}
+          </a>
+          <a href="#" aria-label="Follow us on TikTok" class="text-white/60 hover:text-white transition-colors duration-300 w-5 h-5">
+            {{> base/icons/tiktok-fill }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Attribution & Copyright -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-16 pt-8 border-t border-white/5">
+      <a href="https://pixelrocket.store/" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors duration-300 text-sm no-underline">
+        Template by Pixel Rocket
+      </a>
+      <p class="text-white/60 text-sm">© 2026. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+{{> base/mobile-menu }}

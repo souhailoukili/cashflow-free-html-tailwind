@@ -1,0 +1,41 @@
+{{!-- Browser Card Component
+     Usage: {{> components/card-browser avatar="/images/avatars/avatar-1.webp" name="Name" time="3 days ago" question="Question text" replyAvatar="/images/avatars/avatar-2.webp" }}
+--}}
+<div class="card card-noise card-bordered card-light shadow-xl px-5 py-4 flex flex-col gap-4 w-full">
+  {{!-- Browser Dots --}}
+  <div class="flex gap-1.5">
+    <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+    <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+    <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+  </div>
+
+  {{!-- Question Row --}}
+  <div class="flex gap-4 items-start">
+    <img src="{{avatar}}" alt="{{name}}" class="w-8 h-8 rounded-full object-cover shrink-0" loading="lazy" />
+    <div class="flex flex-col gap-0.5 min-w-0">
+      <p class="text-base leading-6 m-0">
+        <span class="text-gray-200 font-medium">{{name}}</span>
+        <span class="text-gray-400 text-xs ml-2">{{time}}</span>
+      </p>
+      <p class="text-white text-base leading-6 m-0 truncate">{{question}}</p>
+    </div>
+  </div>
+
+  {{!-- Reply Row --}}
+  <div class="flex gap-4 items-center">
+    <img src="{{replyAvatar}}" alt="Reply" class="w-8 h-8 rounded-full object-cover shrink-0" loading="lazy" />
+    <div class="flex gap-1.5">
+      {{!-- Emoji Button --}}
+      <div class="w-8 h-8 flex items-center justify-center rounded-md bg-[var(--color-background)]/25">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none" class="text-white/40"/>
+          <path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="text-white/40"/>
+          <circle cx="9" cy="10" r="1" fill="currentColor" class="text-white/40"/>
+          <circle cx="15" cy="10" r="1" fill="currentColor" class="text-white/40"/>
+        </svg>
+      </div>
+      {{!-- Reply Input --}}
+      <div class="h-8 w-80 rounded-md bg-[var(--color-background)]/25"></div>
+    </div>
+  </div>
+</div>

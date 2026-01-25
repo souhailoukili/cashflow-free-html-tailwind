@@ -1,0 +1,107 @@
+{
+  "columns": [
+    {
+      "menus": [
+        {
+          "title": "Platform",
+          "links": [
+            { "text": "Core features", "url": "#" },
+            { "text": "What's new", "url": "#" },
+            { "text": "Overview", "url": "#" },
+            { "text": "View demo", "url": "#" },
+            { "text": "Our roadmap", "url": "#" },
+            { "text": "Pricing", "url": "#" },
+            { "text": "All features", "url": "#" }
+          ]
+        },
+        {
+          "title": "Company",
+          "links": [
+            { "text": "About Us", "url": "#" },
+            { "text": "Our team", "url": "#" },
+            { "text": "Careers", "url": "#" },
+            { "text": "Our blog", "url": "#" }
+          ]
+        },
+        {
+          "title": "Legals",
+          "hideOnMobile": true,
+          "links": [
+            { "text": "Privacy Policy", "url": "#" },
+            { "text": "Terms & Conditions", "url": "#" }
+          ]
+        }
+      ]
+    },
+    {
+      "menus": [
+        {
+          "title": "Navigation",
+          "links": [
+            { "text": "Login", "url": "#" },
+            { "text": "Register", "url": "#" },
+            { "text": "Contact us", "url": "#" },
+            { "text": "Support", "url": "#" }
+          ]
+        },
+        {
+          "title": "Community",
+          "links": [
+            { "text": "Message board", "url": "#" },
+            { "text": "Slack channel", "url": "#" },
+            { "text": "Discord channel", "url": "#" },
+            { "text": "Youtube channel", "url": "#" },
+            { "text": "Facebook group", "url": "#" },
+            { "text": "Tiktok channel", "url": "#" }
+          ]
+        },
+        {
+          "title": "Developers",
+          "hideOnMobile": true,
+          "links": [
+            { "text": "Documentation", "url": "#" },
+            { "text": "API access", "url": "#" },
+            { "text": "Plugins", "url": "#" },
+            { "text": "Pricing", "url": "#" },
+            { "text": "Integration help", "url": "#" },
+            { "text": "Release notes", "url": "#" }
+          ]
+        }
+      ]
+    },
+    {
+      "menus": [
+        {
+          "title": "Solutions",
+          "hideOnMobile": true,
+          "links": [
+            { "text": "All in one budgets", "url": "#" },
+            { "text": "Monthly budgets", "url": "#" },
+            { "text": "Weekly updates", "url": "#" },
+            { "text": "Cost alerts", "url": "#" },
+            { "text": "Pricing", "url": "#" },
+            { "text": "All solutions", "url": "#" }
+          ]
+        },
+        {
+          "title": "Support",
+          "hideOnMobile": true,
+          "links": [
+            { "text": "Customer support", "url": "#" },
+            { "text": "FAQs", "url": "#" }
+          ]
+        },
+        {
+          "title": "News & Updates",
+          "hideOnMobile": true,
+          "links": [
+            { "text": "Our blog", "url": "#" },
+            { "text": "News articles", "url": "#" },
+            { "text": "In the press", "url": "#" },
+            { "text": "Community articles", "url": "#" }
+          ]
+        }
+      ]
+    }
+  ]
+}

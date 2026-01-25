@@ -1,0 +1,28 @@
+<header
+  class="py-4 relative z-10"
+>
+  <div class="container flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr]">
+    <a
+      href="/"
+      class="w-12 h-12 sm:w-8 sm:h-auto grid transition-opacity hover:opacity-75 duration-300 text-primary"
+      aria-label="Home"
+    >
+      {{> base/logo }}
+    </a>
+    {{> base/header-nav currentPage=currentPage }}
+    <div class="lg:justify-self-end flex items-center gap-4">
+      <a href="/login.html" class="btn btn-primary btn-sm hidden lg:flex" role="button"
+        >Login</a
+      >
+      <button
+        class="cursor-pointer rounded-full btn btn-primary flex items-center justify-center p-3 lg:hidden"
+        data-modal-open
+        aria-controls="modal"
+        aria-haspopup="dialog"
+      >
+        <span class="sr-only">Open Mobile Navigation</span>
+        <span class="w-6">{{> base/icons/menu }}</span>
+      </button>
+    </div>
+  </div>
+</header>

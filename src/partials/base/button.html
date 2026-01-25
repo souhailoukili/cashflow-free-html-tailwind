@@ -1,0 +1,18 @@
+{{!--
+  Button Component
+  Usage: {{> base/button type="primary" size="md" label="Click me" glow=true full=true}}
+  Types: primary, light, dark, link
+  Sizes: xs, sm, md, lg
+  Options: glow (boolean), full (boolean), href (string - renders as <a> instead of <button>)
+--}}
+{{#if href}}
+  <a href="{{href}}" class="btn btn-{{#if type}}{{type}}{{else}}primary{{/if}} btn-{{#if size}}{{size}}{{else}}md{{/if}} inline-flex items-center justify-center gap-2 transition-all duration-300{{#if glow}} soft-glow{{/if}}{{#if full}} w-full{{/if}}">
+    {{#if icon}}{{{icon}}}{{/if}}
+    <span>{{label}}</span>
+  </a>
+{{else}}
+  <button class="btn btn-{{#if type}}{{type}}{{else}}primary{{/if}} btn-{{#if size}}{{size}}{{else}}md{{/if}} inline-flex items-center justify-center gap-2 transition-all duration-300{{#if glow}} soft-glow{{/if}}{{#if full}} w-full{{/if}}">
+    {{#if icon}}{{{icon}}}{{/if}}
+    <span>{{label}}</span>
+  </button>
+{{/if}}

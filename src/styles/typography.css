@@ -1,0 +1,299 @@
+/**
+ * Typography Styles
+ * Base styles for text elements, lists, and inline formatting
+ */
+
+@layer base {
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    @apply mt-12 mb-8;
+  }
+
+  h1:first-child,
+  h2:first-child,
+  h3:first-child,
+  h4:first-child,
+  h5:first-child,
+  h6:first-child {
+    @apply mt-0;
+  }
+
+  h2 {
+    @apply mt-12;
+  }
+
+  h3 {
+    @apply mt-10;
+  }
+
+  /* Paragraphs */
+  p {
+    @apply my-4 leading-7;
+  }
+
+  .text-muted {
+    @apply text-white/60;
+  }
+
+  p:first-child {
+    @apply mt-0;
+  }
+
+  p:last-child {
+    @apply mb-0;
+  }
+
+  /* Inline Text Elements */
+  strong,
+  b {
+    @apply font-bold;
+  }
+
+  em,
+  i {
+    @apply italic;
+  }
+
+  code {
+    @apply font-mono text-[0.875em] px-1.5 py-0.5 bg-white/5 rounded text-[var(--color-primary)];
+  }
+
+  abbr {
+    @apply underline decoration-dotted cursor-help;
+    text-underline-offset: 0.25rem;
+  }
+
+  del {
+    @apply line-through opacity-60;
+  }
+
+  ins {
+    @apply underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.125rem;
+  }
+
+  sub,
+  sup {
+    @apply text-[0.75em] relative;
+    line-height: 0;
+    vertical-align: baseline;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+  mark {
+    @apply bg-[var(--color-primary)] text-[var(--color-primary-foreground)] px-1 py-0.5 rounded;
+  }
+
+  /* Links */
+  a {
+    @apply text-[var(--color-primary)] underline transition-opacity duration-200;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.125rem;
+  }
+
+  a:hover {
+    @apply opacity-80;
+  }
+
+  /* Lists */
+  ul {
+    @apply list-disc pl-3 my-4;
+  }
+
+  ol {
+    @apply list-decimal pl-3 my-4;
+  }
+
+  li {
+    @apply mt-0 mb-[0.35rem] leading-7;
+  }
+
+  /* Nested lists */
+  ul ul,
+  ol ul {
+    @apply list-[circle] my-2;
+  }
+
+  ul ul ul,
+  ol ul ul,
+  ul ol ul,
+  ol ol ul {
+    @apply list-[square];
+  }
+
+  ol ol,
+  ul ol {
+    @apply my-2;
+    list-style-type: lower-alpha;
+  }
+
+  ol ol ol,
+  ul ol ol {
+    list-style-type: lower-roman;
+  }
+
+  /* Definition Lists */
+  dl {
+    @apply my-6;
+  }
+
+  dt {
+    @apply font-semibold mt-4 mb-1;
+  }
+
+  dd {
+    @apply ml-6 mb-3 opacity-85;
+  }
+
+  dd:last-child {
+    @apply mb-0;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    @apply border-l-4 border-[var(--color-primary)] p-4 px-6 my-6 bg-white/[0.02] italic;
+  }
+
+  blockquote p {
+    @apply my-2;
+  }
+
+  blockquote p:first-child {
+    @apply mt-0;
+  }
+
+  blockquote p:last-child {
+    @apply mb-0;
+  }
+
+  blockquote footer {
+    @apply mt-4 not-italic text-sm font-medium opacity-90;
+  }
+
+  /* Code Blocks */
+  pre {
+    @apply bg-white/5 border border-white/10 rounded-lg p-6 overflow-x-auto my-6;
+  }
+
+  pre code {
+    @apply text-sm leading-[1.7] bg-transparent p-0 rounded-none text-inherit;
+  }
+
+  /* Horizontal Rule */
+  hr {
+    @apply border-0 border-t border-white/10 my-8;
+  }
+
+  /* Keyboard Input */
+  kbd {
+    @apply font-mono text-sm px-2 py-1 bg-white/5 border border-white/10 rounded shadow-sm;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Small Text */
+  small {
+    @apply text-[0.875em] opacity-75;
+  }
+
+  /* Prose Custom - Blog Content Styling */
+  .prose-custom h1 {
+    @apply mb-6 mt-0;
+  }
+
+  .prose-custom h2 {
+    @apply mb-4 mt-12 ;
+  }
+
+  .prose-custom h3 {
+    @apply mb-3 mt-10;
+  }
+
+  .prose-custom h2:first-of-type {
+    @apply mt-0;
+  }
+
+  .prose-custom p {
+    @apply text-white/70 text-base md:text-lg leading-relaxed my-6;
+  }
+
+  .prose-custom ul {
+    @apply my-6 space-y-2;
+  }
+
+  .prose-custom li {
+    @apply text-white/70 text-base md:text-lg leading-relaxed;
+  }
+
+  .prose-custom blockquote {
+    @apply border-l-4 border-primary pl-6 pr-4 py-4 my-8 bg-white/[0.02] rounded-r-xl;
+  }
+
+  .prose-custom blockquote p {
+    @apply text-xl md:text-2xl font-display italic text-white/90 my-0;
+  }
+
+  .prose-custom blockquote cite {
+    @apply block mt-4 text-base not-italic text-primary font-semibold;
+  }
+
+  .prose-custom figure {
+    @apply my-10;
+  }
+
+  .prose-custom figcaption {
+    @apply text-sm text-white/50 mt-3 text-center;
+  }
+
+  .prose-custom img {
+    @apply w-full h-auto rounded-2xl;
+  }
+
+  .prose-custom a {
+    @apply text-primary hover:text-primary/80 underline transition-colors;
+  }
+
+  .prose-custom strong {
+    @apply font-bold text-white;
+  }
+
+  .prose-custom code {
+    @apply font-mono text-sm px-2 py-1 bg-white/5 rounded text-primary;
+  }
+}
+
+/* Prose section - scoped heading margins for long-form content */
+@layer overrides {
+  .prose-section h1,
+  .prose-section h2,
+  .prose-section h3,
+  .prose-section h4,
+  .prose-section h5,
+  .prose-section h6 {
+    @apply mt-16 mb-6;
+  }
+
+  .prose-section h1:first-child,
+  .prose-section h2:first-child,
+  .prose-section h3:first-child,
+  .prose-section h4:first-child,
+  .prose-section h5:first-child,
+  .prose-section h6:first-child {
+    @apply mt-0;
+  }
+
+  .prose-section h2 {
+    @apply mt-12;
+  }
+
+  .prose-section h3 {
+    @apply mt-10;
+  }
+}

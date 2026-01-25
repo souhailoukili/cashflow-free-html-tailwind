@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Home",
+    "url": "/index.html"
+  },
+    {
+    "label": "About",
+    "url": "/about.html"
+  },
+  {
+    "label": "Features",
+    "url": "/features.html"
+  },
+  {
+    "label": "Pricing",
+    "url": "/pricing.html"
+  },
+  {
+    "label": "Support",
+    "url": "/support.html"
+  },
+  {
+    "label": "Blog",
+    "url": "/blog.html"
+  },
+    {
+    "label": "Contact",
+    "url": "/contact.html"
+  }
+]

@@ -1,0 +1,70 @@
+dialog {
+  --modal-transition-in: cubic-bezier(0.65, 0.14, 0.14, 0.91);
+  --modal-transition-out: cubic-bezier(0.98, 0.03, 0.66, 0.9);
+
+  /* Use fixed positioning with inset to fill viewport */
+  position: fixed;
+  inset: 0;
+
+  /* Use dvh/dvw for dynamic viewport units (handles mobile address bar) */
+  /* Falls back to vh/vw for older browsers */
+  width: 100vw;
+  width: 100dvw;
+  height: 100vh;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+
+  /* Reset default dialog margins/padding */
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  background: transparent;
+  overflow: hidden;
+}
+
+.modal-close {
+  opacity: 0;
+  transition: opacity var(--modal-transition-out) 0.2s;
+}
+
+.modal-content {
+  /* Ensure content fills full viewport height */
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  /* Safe area padding for notches/home indicators */
+  /* Uses max() to ensure at least 3rem padding, more if safe-area requires it */
+  padding-top: max(3rem, env(safe-area-inset-top, 0px));
+  padding-bottom: max(3rem, env(safe-area-inset-bottom, 0px));
+  padding-left: max(3rem, env(safe-area-inset-left, 0px));
+  padding-right: max(3rem, env(safe-area-inset-right, 0px));
+
+  transform: translateX(-100%);
+  transition: transform var(--modal-transition-out) 0.4s;
+}
+
+/* Larger padding on wider screens */
+@media (min-width: 640px) {
+  .modal-content {
+    padding-top: max(5rem, env(safe-area-inset-top, 0px));
+    padding-bottom: max(5rem, env(safe-area-inset-bottom, 0px));
+    padding-left: max(5rem, env(safe-area-inset-left, 0px));
+    padding-right: max(5rem, env(safe-area-inset-right, 0px));
+  }
+}
+
+dialog.open .modal-content {
+  transform: translateX(0);
+  transition: transform var(--modal-transition-in) 0.4s;
+}
+
+dialog.open .modal-close {
+  opacity: 1;
+  transition: opacity var(--modal-transition-out) 0.2s 0.7s;
+}
+
+dialog::backdrop {
+  background: transparent;
+}

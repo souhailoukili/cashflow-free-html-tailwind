@@ -1,0 +1,14 @@
+<nav aria-label="Main navigation" class="hidden lg:flex">
+    <ul class="flex gap-4 items-center list-none m-0 px-1 py-1 bg-black/40 backdrop-blur-xl rounded-full leading-none border border-white/10">
+        {{#each menu}}
+            <li class="m-0 p-0">
+                <a
+                    href="{{ url }}"
+                    class="no-underline font-semibold text-xs leading-none px-4 py-2 flex {{#if (eq url ../currentPage)}}rounded-full bg-neutral-800 border border-white/10 text-white{{else}}text-white/75 hover:text-white/90{{/if}}"
+                >
+                    {{ label }}
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+</nav>

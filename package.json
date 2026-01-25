@@ -1,0 +1,25 @@
+{
+  "name": "cashflow-free",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "vite": "^6.0.2",
+    "vite-plugin-handlebars": "^2.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.0-beta.5",
+    "gsap": "^3.14.2",
+    "tailwindcss": "^4.0.0-beta.5"
+  }
+}

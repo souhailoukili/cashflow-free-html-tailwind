@@ -1,0 +1,13 @@
+{
+  "icons": [
+    { "icon": "base/icons/wallet-line", "alt": "Wallet" },
+    { "icon": "base/icons/chat-smile-ai-line", "alt": "AI Chat" },
+    { "icon": "base/icons/pie-chart-line", "alt": "Pie Chart" },
+    { "icon": "base/icons/bank-line", "alt": "Bank" },
+    { "icon": "base/icons/calendar-todo-line", "alt": "Calendar" },
+    { "icon": "base/icons/bank-card-fill", "alt": "Bank Card" },
+    { "icon": "base/icons/mail-star-fill", "alt": "Mail Star" },
+    { "icon": "base/icons/pie-chart-box-line", "alt": "Charts" },
+    { "icon": "base/icons/alert-fill", "alt": "Alerts" }
+  ]
+}

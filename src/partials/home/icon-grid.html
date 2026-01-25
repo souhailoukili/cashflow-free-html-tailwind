@@ -1,0 +1,11 @@
+<div class="icon-grid grid grid-cols-3 gap-5" data-icon-grid>
+  {{#each icons}}
+  <div class="icon-grid-item flex items-center justify-center w-[100px] h-[100px] rounded-lg border border-[#27262b] bg-[#15131b] {{#if icon}}text-primary{{/if}}" data-icon-grid-item>
+    {{#if icon}}
+    <span class="w-12 h-12 [&>svg]:w-full [&>svg]:h-full">{{> (lookup . 'icon') }}</span>
+    {{else}}
+    <img src="{{ src }}" alt="{{ alt }}" class="w-12 h-12 object-contain" loading="lazy" />
+    {{/if}}
+  </div>
+  {{/each}}
+</div>

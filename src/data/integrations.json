@@ -1,0 +1,13 @@
+{
+  "icons": [
+    { "src": "/images/integrations/expensify.svg", "alt": "Expensify" },
+    { "src": "/images/integrations/dropbox.svg", "alt": "Dropbox" },
+    { "src": "/images/integrations/gmail.svg", "alt": "Gmail" },
+    { "src": "/images/integrations/googlecalendar.svg", "alt": "Google Calendar" },
+    { "src": "/images/integrations/paypal.svg", "alt": "PayPal" },
+    { "src": "/images/integrations/slack.svg", "alt": "Slack" },
+    { "src": "/images/integrations/xero.svg", "alt": "Xero" },
+    { "src": "/images/integrations/trello.svg", "alt": "Trello" },
+    { "src": "/images/integrations/evernote.svg", "alt": "Evernote" }
+  ]
+}

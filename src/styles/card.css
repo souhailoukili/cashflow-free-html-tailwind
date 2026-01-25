@@ -1,0 +1,136 @@
+@layer components {
+  /* Base card styles */
+  .card {
+    @apply relative overflow-hidden rounded-xl isolate;
+    background-color: var(--color-card);
+  }
+
+  /* Card with border */
+  .card-bordered {
+    @apply border;
+    border-color: var(--color-card-border);
+  }
+
+  /* Light card variant - gradient background */
+  .card-light {
+    background: linear-gradient(278deg, #28272C 46.46%, #313035 94.5%);
+    border-color: #3d3d3f;
+  }
+
+  /*
+   * Noise texture overlay
+   * Uses SVG feTurbulence filter for grain effect
+   * Apply to card with: class="card card-noise"
+   */
+  .card-noise::before {
+    content: '';
+    @apply absolute inset-0 pointer-events-none -z-10;
+    border-radius: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' seed='15' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 150px 150px;
+    opacity: 0.15;
+  }
+
+  /* Noise overlay for light cards uses color-burn */
+  .card-light.card-noise::before {
+    mix-blend-mode: color-burn;
+    opacity: 0.5;
+  }
+
+  /* Pattern card variant - dot grid + gradient */
+  .card-pattern {
+    background:
+      radial-gradient(circle, rgba(255, 255, 255, 0.10) 1px, transparent 1px) 0 0 / 20px 20px,
+      linear-gradient(278deg, #28272C 90.46%, #313035 99%);
+    border-color: #505054;
+  }
+
+  .card-pattern.card-noise::before {
+    opacity: 0.09;
+  }
+
+  /* ----------------------------------------
+     CARD PADDING VARIANTS
+     ---------------------------------------- */
+
+  .card-sm {
+    @apply p-4;
+  }
+
+  .card-md {
+    @apply p-6;
+  }
+
+  .card-lg {
+    @apply p-7;
+  }
+
+  /* ----------------------------------------
+     CARD HOVER STATES
+     ---------------------------------------- */
+
+  .card-hover {
+    @apply transition-colors duration-300;
+  }
+
+  .card-hover:hover {
+    background-color: var(--color-card-hover);
+  }
+
+  /* ----------------------------------------
+     CARD WITH GRADIENT BORDER
+     For premium feature cards
+     ---------------------------------------- */
+
+  .card-gradient-border {
+    @apply relative;
+    background: var(--color-card);
+  }
+
+  .card-gradient-border::after {
+    content: '';
+    @apply absolute inset-0 rounded-xl pointer-events-none;
+    padding: 1px;
+    background: linear-gradient(
+      135deg,
+      oklch(100% 0 0 / 15%),
+      oklch(100% 0 0 / 5%)
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  /* ----------------------------------------
+     BAR CHART STRIPED PATTERN
+     Used in hero card activity chart
+     ---------------------------------------- */
+
+  .bar-striped {
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 2px,
+      transparent 8px
+    );
+  }
+
+}
+
+/* Active state styles in overrides layer to beat Tailwind utilities */
+@layer overrides {
+  .value-carousel-card.active span {
+    color: var(--color-primary);
+  }
+
+  .value-carousel-card.active .card-title {
+    color: var(--color-primary);
+  }
+}

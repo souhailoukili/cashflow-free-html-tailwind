@@ -1,0 +1,11 @@
+{{!-- Footer Menu Component --}}
+<div class="flex flex-col gap-3 {{#if hideOnMobile}}hidden lg:flex{{/if}}">
+  <p class="text-white font-bold uppercase text-sm leading-5 !m-0">{{ title }}</p>
+  <ul class="flex flex-col gap-1 list-none !m-0 !p-0">
+    {{#each links}}
+    <li class="!m-0 !p-0">
+      <a href="{{ url }}" class="text-gray-200 text-sm leading-6 hover:text-white transition-colors duration-300 no-underline">{{ text }}</a>
+    </li>
+    {{/each}}
+  </ul>
+</div>

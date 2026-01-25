@@ -1,0 +1,85 @@
+/**
+ * ============================================
+ * INSTRUMENT SERIF + INTER FONT THEME
+ * ============================================
+ *
+ * Heading: Instrument Serif - Elegant, editorial display font
+ * Body: Inter - Clean, readable body text
+ *
+ * A sophisticated pairing that combines classic serif elegance
+ * with modern sans-serif readability. Perfect for premium SaaS,
+ * finance, and lifestyle brands.
+ *
+ * Font URL is loaded via theme.config.js → vite.config.js → head.html
+ */
+
+@theme {
+  /* ----------------------------------------
+   * FONT FAMILIES
+   * ---------------------------------------- */
+
+  --font-display: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+  /* ----------------------------------------
+   * HEADING FONT SIZES (Type Scale)
+   * Overrides standard Tailwind text-* classes
+   * ---------------------------------------- */
+
+  --text-7xl: 5.5rem;
+  --text-7xl--line-height: 1.025;
+  --text-7xl--letter-spacing: -0.01em;
+
+  --text-6xl: 4.209rem;
+  --text-6xl--line-height: 1.15;
+  --text-6xl--letter-spacing: -0.015em;
+
+  --text-5xl: 3.157rem;
+  --text-5xl--line-height: 1.2;
+  --text-5xl--letter-spacing: -0.01em;
+
+  --text-4xl: 2.369rem;
+  --text-4xl--line-height: 1.25;
+  --text-4xl--letter-spacing: 0;
+
+  --text-3xl: 1.777rem;
+  --text-3xl--line-height: 1.3;
+  --text-3xl--letter-spacing: 0;
+
+  --text-2xl: 1.333rem;
+  --text-2xl--line-height: 1.4;
+  --text-2xl--letter-spacing: 0;
+
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  h1 {
+    @apply text-6xl md:text-7xl font-normal;
+  }
+
+  h2 {
+    @apply text-6xl md:text-6xl font-normal;
+  }
+
+  h3 {
+    @apply text-5xl md:text-5xl font-normal;
+  }
+
+  h4 {
+    @apply text-4xl md:text-4xl font-normal;
+  }
+
+  h5 {
+    @apply text-3xl md:text-3xl font-normal;
+  }
+
+  h6 {
+    @apply text-2xl md:text-2xl font-normal;
+  }
+}
+

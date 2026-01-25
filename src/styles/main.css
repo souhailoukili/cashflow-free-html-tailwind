@@ -1,0 +1,110 @@
+@import 'tailwindcss';
+
+/* ============================================
+   CSS CASCADE LAYERS
+   ============================================
+   This defines the priority order for CSS rules.
+   Layers listed later have HIGHER priority.
+
+   Layer order (lowest to highest priority):
+   1. theme      - Design tokens, CSS variables
+   2. base       - Reset styles, element defaults
+   3. components - Reusable component styles (.card, .btn)
+   4. utilities  - Tailwind utility classes (.flex, .p-4)
+   5. overrides  - Final overrides that beat utilities
+
+   WHEN TO USE @layer overrides:
+   Use this layer when you need styles to override
+   Tailwind utilities. This is common when:
+   - JavaScript adds classes dynamically (e.g., .active)
+   - You need state-based styling that conflicts with utilities
+   - Third-party components need style adjustments
+
+   EXAMPLE:
+   ----------------------------------------
+   Tailwind class: class="text-white/40"
+   JS adds:        class="active"
+
+   Without overrides layer (WON'T WORK):
+   .my-component.active span {
+     color: var(--color-primary);
+   }
+
+   With overrides layer (WORKS):
+   @layer overrides {
+     .my-component.active span {
+       color: var(--color-primary);
+     }
+   }
+   ----------------------------------------
+
+   NOTE: Only use @layer overrides when necessary.
+   For normal component styles, use @layer components.
+   ============================================ */
+@layer theme, base, components, utilities, overrides;
+
+/* ============================================
+   THEME CONFIGURATION
+   ============================================
+   Change these imports to switch themes.
+   Make sure to also update src/theme.config.js
+   to match your choices here.
+
+   Available colors: yellow, blue, red, green
+   Available fonts: figtree, instrument-serif
+
+   Each font theme sets:
+   - --font-display (headings)
+   - --font-sans (body text)
+   ============================================ */
+@import './themes/colors/yellow.css';
+@import './themes/fonts/instrument-serif.css';
+
+/* This makes sure Tailwind picks up our partial styles */
+@source "../partials";
+/* This makes sure Tailwind picks up additional classes in src/data */
+@source "../data";
+
+/* Tailwind config and base styles */
+@import './tailwind-config';
+
+/* Animations */
+@import './animations';
+
+
+/* Typography & Content */
+@import './typography';
+
+/* Components */
+@import './button';
+@import './card';
+@import './navbar';
+@import './mobile-menu';
+@import './forms';
+
+/* ============================================
+   PAGE TRANSITIONS (View Transitions API)
+   ============================================ */
+
+/* Enable view transitions for navigation */
+@view-transition {
+  navigation: auto;
+}
+
+/* Fade-in only - old page hides instantly, new page fades in */
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root) {
+    animation: none;
+  }
+
+  ::view-transition-new(root) {
+    animation: page-fade-in 0.3s ease-out;
+  }
+}
+
+@keyframes page-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+

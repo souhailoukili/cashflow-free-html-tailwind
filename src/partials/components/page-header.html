@@ -1,0 +1,22 @@
+{{!-- Page Header Component --}}
+<section class="container py-24">
+  <div class="grid gap-6 text-center max-w-3xl mx-auto">
+    {{#if title}}
+      <div data-animate="fade-up blur" data-duration="0.6" data-blur="10" data-distance="30">
+        {{> components/page-title text=title }}
+      </div>
+    {{/if}}
+    {{#if subtitle}}
+      <div
+        class="max-w-xl mx-auto"
+        data-animate="fade-up blur"
+        data-duration="0.6"
+        data-delay="0.15"
+        data-blur="10"
+        data-distance="30"
+      >
+        {{> components/page-subtitle text=subtitle }}
+      </div>
+    {{/if}}
+  </div>
+</section>

@@ -1,0 +1,105 @@
+/**
+ * ============================================
+ * YELLOW THEME
+ * ============================================
+ *
+ * A warm, energetic theme with yellow/gold accents.
+ * Perfect for finance, productivity, and energy-focused SaaS.
+ */
+
+@theme {
+  /* ----------------------------------------
+   * BACKGROUND COLORS
+   * ---------------------------------------- */
+
+  /* Main page background */
+  --color-background: oklch(8.5% 0.01 260);
+
+  /* Subtle background for sections, alternating content */
+  --color-background-subtle: oklch(10% 0.01 260);
+
+  /* ----------------------------------------
+   * FOREGROUND / TEXT COLORS
+   * ---------------------------------------- */
+
+  /* Primary text - headings, important content */
+  --color-foreground: oklch(100% 0 0);
+
+  /* Secondary text - body copy, descriptions */
+  --color-foreground-muted: oklch(70% 0.01 260);
+
+  /* Tertiary text - captions, timestamps, hints */
+  --color-foreground-subtle: oklch(50% 0.01 260);
+
+  /* ----------------------------------------
+   * PRIMARY ACCENT
+   * Used for buttons, links, highlights
+   * Base: #FCEB03 = oklch(93.5% 0.21 102)
+   * ---------------------------------------- */
+
+  --color-primary: oklch(93.5% 0.21 102);
+  --color-primary-hover: oklch(96% 0.19 102);
+
+  /* Text on primary background */
+  --color-primary-foreground: oklch(15% 0.02 102);
+
+  /* ----------------------------------------
+   * BORDER
+   * ---------------------------------------- */
+
+  --color-border: oklch(100% 0 0 / 10%);
+
+  /* ----------------------------------------
+   * CARD STYLES
+   * ---------------------------------------- */
+
+  --color-card: oklch(12% 0.01 260);
+  --color-card-hover: oklch(15% 0.01 260);
+  --color-card-border: oklch(100% 0 0 / 15%);
+
+  /* ----------------------------------------
+   * GLOW
+   * ---------------------------------------- */
+
+  --color-glow-strong: oklch(93.5% 0.21 102 / 40%);
+
+  /* ----------------------------------------
+   * ANIMATED BUTTON
+   * ---------------------------------------- */
+
+  --color-button-animated-accent: oklch(93.5% 0.21 102);
+
+  /* ----------------------------------------
+   * GRADIENTS
+   * Pre-composed gradients for text and backgrounds
+   * ---------------------------------------- */
+
+  /* Primary gradient - warm gold spectrum */
+  --gradient-primary: linear-gradient(135deg, oklch(93.5% 0.21 102), oklch(82% 0.22 95));
+  --gradient-primary-reverse: linear-gradient(135deg, oklch(82% 0.22 95), oklch(93.5% 0.21 102));
+
+  /* Accent gradient - adds orange tones */
+  --gradient-accent: linear-gradient(135deg, oklch(93.5% 0.21 102), oklch(85% 0.22 70));
+  --gradient-accent-reverse: linear-gradient(135deg, oklch(85% 0.22 70), oklch(93.5% 0.21 102));
+
+  /* Button */
+  --gradient-button: oklch(93.5% 0.21 102);
+  --gradient-button-hover: oklch(96% 0.19 102);
+
+  /* Button text color */
+  --color-button-foreground: oklch(15% 0.02 102);
+
+  /* Subtle gradient - for backgrounds */
+  --gradient-subtle: linear-gradient(180deg, oklch(10% 0.01 260), oklch(8.5% 0.01 260));
+  --gradient-subtle-radial: radial-gradient(ellipse at top, oklch(15% 0.02 102), oklch(8.5% 0.01 260));
+
+  /* Hero/spotlight gradient - dramatic effect */
+  --gradient-hero: linear-gradient(180deg, oklch(93.5% 0.21 102 / 20%) 0%, transparent 50%);
+  --gradient-hero-radial: radial-gradient(ellipse 80% 50% at 50% -20%, oklch(93.5% 0.21 102 / 30%), transparent);
+
+  /* Text gradient - for gradient text effects */
+  --gradient-text: linear-gradient(135deg, oklch(96% 0.15 102), oklch(93.5% 0.21 102), oklch(85% 0.22 70));
+
+  /* Mesh gradient - complex multi-stop */
+  --gradient-mesh: linear-gradient(135deg, oklch(93.5% 0.21 102 / 80%) 0%, oklch(88% 0.23 90 / 60%) 50%, oklch(85% 0.22 70 / 40%) 100%);
+}

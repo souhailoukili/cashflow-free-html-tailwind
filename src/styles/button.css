@@ -1,0 +1,91 @@
+/* ============================================
+   BUTTON COMPONENT STYLES
+   ============================================
+   Types: primary, light, dark, link, link-primary, link-white
+   Sizes: xs, sm, md (default), lg
+   Options: glow (soft-glow class)
+   ============================================ */
+
+@layer components {
+  /* Base button styles (includes md size as default) */
+  .btn {
+    @apply w-fit rounded-full font-semibold transition-all duration-300 no-underline cursor-pointer border-2 border-transparent px-6 py-3 text-base;
+  }
+
+  /* ----------------------------------------
+     BUTTON TYPES
+     ---------------------------------------- */
+
+  /* Primary button - uses theme gradient */
+  .btn-primary {
+    background: var(--gradient-button);
+    color: var(--color-button-foreground);
+  }
+
+  .btn-primary:hover {
+    background: var(--gradient-button-hover);
+  }
+
+  /* Light button - white/light background */
+  .btn-light {
+    @apply bg-white text-gray-950 hover:bg-white/90 hover:text-gray-600;
+  }
+
+  /* Dark button - background color with white text */
+  .btn-dark {
+    background-color: var(--color-background);
+    @apply text-white hover:bg-white hover:text-gray-950;
+  }
+
+  /* Link button base - text only, no background */
+  .btn-link {
+    @apply bg-transparent border-none text-white hover:text-white/80;
+  }
+
+  /* Link primary variant */
+  .btn-link-primary {
+    @apply bg-transparent border-none text-primary hover:text-primary-hover;
+  }
+
+  /* Link white variant */
+  .btn-link-white {
+    @apply bg-transparent border-none text-white hover:text-white/80;
+  }
+
+  /* ----------------------------------------
+     BUTTON SIZES
+     ---------------------------------------- */
+
+  /* Extra small */
+  .btn-xs {
+    @apply px-3 py-1.5 text-xs;
+  }
+
+  /* Small */
+  .btn-sm {
+    @apply px-4 py-2 text-sm;
+  }
+
+  /* Medium (default) */
+  .btn-md {
+    @apply px-6 py-3 text-base;
+  }
+
+  /* Large */
+  .btn-lg {
+    @apply px-8 py-4 text-lg;
+  }
+
+  /* ----------------------------------------
+     BUTTON MODIFIERS
+     ---------------------------------------- */
+
+  /* Glow effect for primary buttons */
+  .btn-primary.soft-glow {
+    @apply shadow-lg shadow-primary/25;
+  }
+
+  .btn-primary.soft-glow:hover {
+    @apply shadow-xl shadow-primary/35;
+  }
+}

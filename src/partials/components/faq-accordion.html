@@ -1,0 +1,30 @@
+<div class="flex flex-col gap-4 w-full max-w-3xl" id="faq-accordion" data-faq-accordion>
+  {{#each @root.faqs}}
+  <div class="faq-item card card-noise card-bordered !overflow-visible" data-faq-item>
+    <!-- Animated border SVG -->
+    <svg class="faq-border absolute inset-0 w-full h-full pointer-events-none z-10 rounded-lg overflow-visible" aria-hidden="true">
+      <rect class="faq-border-rect" data-faq-border-rect x="0.5" y="0.5" rx="8" ry="8" fill="none" stroke-width="1" />
+    </svg>
+    <button
+      type="button"
+      id="faq-trigger-{{@index}}"
+      class="faq-trigger w-full flex items-center justify-between p-5 text-left cursor-pointer"
+      aria-expanded="false"
+      aria-controls="faq-content-{{@index}}"
+      data-faq-trigger
+    >
+      <span class="text-foreground font-medium text-lg">{{ question }}</span>
+      <span class="faq-icon-wrap shrink-0 ml-4" aria-hidden="true" data-faq-icon>
+        <svg class="faq-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path class="faq-icon-path" data-faq-icon-path d="M12 5v14M5 12h14" />
+        </svg>
+      </span>
+    </button>
+    <div id="faq-content-{{@index}}" role="region" aria-labelledby="faq-trigger-{{@index}}" class="faq-content" style="height: 0; overflow: hidden;" data-faq-content>
+      <div class="faq-answer px-5 pb-5 text-foreground-muted leading-relaxed" data-faq-answer>
+        {{ answer }}
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>

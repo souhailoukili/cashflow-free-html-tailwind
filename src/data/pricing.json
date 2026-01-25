@@ -1,0 +1,53 @@
+{
+  "defaultBilling": "yearly",
+  "plans": [
+    {
+      "id": "free",
+      "name": "Free",
+      "description": "Get started with basic budgeting tools at no cost.",
+      "monthlyPrice": 0,
+      "yearlyPrice": 0,
+      "features": [
+        "1 bank account",
+        "Basic spending overview",
+        "1 savings goal",
+        "Community support"
+      ],
+      "cta": "Get Started",
+      "featured": false,
+      "highlight": false
+    },
+    {
+      "id": "starter",
+      "name": "Starter",
+      "description": "Essential AI tools to take control of your finances.",
+      "monthlyPrice": 9,
+      "yearlyPrice": 7,
+      "features": [
+        "Up to 5 bank accounts",
+        "AI spending insights",
+        "Up to 5 savings goals",
+        "Email support"
+      ],
+      "cta": "Get Started",
+      "featured": true,
+      "highlight": true
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "description": "Advanced AI features for serious wealth builders.",
+      "monthlyPrice": 19,
+      "yearlyPrice": 15,
+      "features": [
+        "Unlimited bank accounts",
+        "Advanced AI forecasting",
+        "Unlimited savings goals",
+        "Priority 24/7 support"
+      ],
+      "cta": "Get Started",
+      "featured": false,
+      "highlight": false
+    }
+  ]
+}

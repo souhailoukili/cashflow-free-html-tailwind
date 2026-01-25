@@ -1,0 +1,52 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Chen",
+      "role": "Small Business Owner",
+      "avatar": "/images/avatars/avatar-1.webp",
+      "quote": "Cashflow helped me finally understand where my money was going. I've saved over $12,000 this year just by following the AI recommendations.",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Marcus Johnson",
+      "role": "Software Engineer",
+      "avatar": "/images/avatars/avatar-5.webp",
+      "quote": "The debt payoff planner changed my life. I was able to pay off $45,000 in student loans two years ahead of schedule.",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Emily Rodriguez",
+      "role": "Marketing Director",
+      "avatar": "/images/avatars/avatar-3.webp",
+      "quote": "I love how all my accounts sync automatically. Having everything in one place makes budgeting so much easier.",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "David Park",
+      "role": "Freelance Designer",
+      "avatar": "/images/avatars/avatar-8.webp",
+      "quote": "As a freelancer, my income varies a lot. Cashflow's smart budgeting adapts to my irregular paychecks perfectly.",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Rachel Thompson",
+      "role": "Healthcare Professional",
+      "avatar": "/images/avatars/avatar-12.webp",
+      "quote": "The goal tracking feature kept me motivated. I saved for my dream vacation in just 8 months!",
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "name": "James Wilson",
+      "role": "Retired Teacher",
+      "avatar": "/images/avatars/avatar-15.webp",
+      "quote": "Finally, a finance app that's easy to use. The investment tracking gives me peace of mind about my retirement.",
+      "rating": 5
+    }
+  ]
+}

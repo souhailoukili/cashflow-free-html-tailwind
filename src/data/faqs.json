@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What features are included in the Plus Plan?",
+    "answer": "The Plus Plan includes unlimited budget tracking, custom categories, bill reminders, savings goals, spending insights, and priority customer support. You also get access to our mobile app with real-time sync across all your devices."
+  },
+  {
+    "question": "How can I upgrade or downgrade my subscription plan?",
+    "answer": "You can change your subscription at any time from your account settings. Simply navigate to Billing & Subscription, select your new plan, and confirm the change. Upgrades take effect immediately, while downgrades apply at the start of your next billing cycle."
+  },
+  {
+    "question": "How do I set and manage savings goals?",
+    "answer": "Setting up savings goals is easy. Go to the Goals section in your dashboard, click 'Create New Goal', enter your target amount and deadline, and Budget Buddy will automatically calculate how much you need to save each month to reach it."
+  },
+  {
+    "question": "What kind of support is available for Budget Buddy users?",
+    "answer": "We offer multiple support channels including 24/7 live chat, email support with a 4-hour response time, an extensive knowledge base, and video tutorials. Plus Plan users also get access to one-on-one financial coaching sessions."
+  },
+  {
+    "question": "Is my financial data secure with Budget Buddy?",
+    "answer": "Absolutely. We use bank-level 256-bit encryption to protect your data, and we never store your bank credentials. Our systems are regularly audited by independent security firms, and we're fully compliant with GDPR and SOC 2 standards."
+  }
+]

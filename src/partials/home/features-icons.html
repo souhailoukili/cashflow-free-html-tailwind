@@ -1,0 +1,16 @@
+<section class="container py-36 md:py-48">
+    <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+      <!-- Icon Grid -->
+      <div class="flex-1 flex justify-center">
+        {{> home/icon-grid icons=@root.featureIcons.icons }}
+      </div>
+
+      <!-- Content -->
+      {{> components/section-intro
+        subtitle="Our Features"
+        title="Everything you need to manage your finances"
+        description="Powerful tools designed to help you take control of your budget, track expenses, and achieve your financial goals with ease."
+      }}
+
+    </div>
+</section>

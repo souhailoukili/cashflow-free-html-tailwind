@@ -1,0 +1,43 @@
+  <div class="mb-20">
+    {{> components/section-intro
+        centered="true"
+        subtitle="Success Stories"
+        title="Real results from satisfied customers"
+      }}
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-12 items-start">
+    <!-- Left: Video Player -->
+    <div data-animate="fade-left blur" data-duration="0.6" data-blur="10" data-distance="30">
+      {{> video-player }}
+    </div>
+
+    <!-- Right: Testimonials Carousel -->
+    <div
+      class="h-[600px] overflow-hidden relative group"
+      data-animate="fade-right blur"
+      data-duration="0.6"
+      data-delay="0.1"
+      data-blur="10"
+      data-distance="30"
+    >
+      <!-- Gradient masks -->
+      <div class="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-background to-transparent z-10 pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
+
+      <div class="flex flex-col animate-scroll-up group-hover:animate-paused">
+        <!-- First set -->
+        <div class="flex flex-col">
+          {{#each testimonials.testimonials}}
+          {{> components/testimonial-card }}
+          {{/each}}
+        </div>
+        <!-- Second set (duplicate for seamless loop) -->
+        <div class="flex flex-col">
+          {{#each testimonials.testimonials}}
+          {{> components/testimonial-card }}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
